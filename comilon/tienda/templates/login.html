@@ -1,0 +1,19 @@
+{% extends "./base.html" %} {% block title %} index {% endblock %} {% block
+body%} {% load static %} {% block body %}
+<form method="POST">
+  {% csrf_token %}
+  <div class="login">
+    <input type="text" name="username" placeholder="Ingrese su usuario" />
+  </div>
+  <div class="login">
+    <input
+      type="password"
+      name="password"
+      placeholder="Ingrese su contraseña"
+    />
+  </div>
+  <div>
+    <button type="submit">Iniciar Sesión</button>
+  </div>
+</form>
+{% endblock %}
