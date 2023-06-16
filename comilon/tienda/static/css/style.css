@@ -1,17 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .navbar {
-  background: #c9d6ff;
+  background: #508aa8;
   color: #000;
   height: 10vh;
+  display: flex;
 }
 
 .container {
-  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
-  color: #000;
+  background: linear-gradient(to right, #c8e0f4, #9dd1f1);
   height: 90vh;
+}
+
+a {
+  text-decoration: none;
+  color: #031927;
+}
+
+.box-logo {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.logo {
+  height: 80%;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: gasoek one, sans-serif;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.box-menu {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.menu-item {
+  display: inline-flex;
+  font-size: 1.5rem;
+  height: 60%;
+  padding: 20px;
+  margin: 0 10px;
+  align-items: center;
+  border: 2px solid black;
+  outline: black solid;
+  outline-offset: 0.2rem;
+  background: #ba1200;
+}
+
+.menu-btn {
+  margin-right: auto;
+}
+
+.regis {
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke-color: black;
+}
+
+.login {
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke-color: black;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  background-color: #508aa8;
+  align-items: center;
+}
+
+.tm {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  font-size: 1.5rem;
+  margin: 2rem;
+  margin-left: auto;
+  font-family: gasoek one, sans-serif;
 }

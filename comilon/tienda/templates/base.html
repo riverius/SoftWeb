@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><a href="{% url 'index' %}">Inicio</a></li>
-        <li><a href="{% url 'login' %}">Iniciar Sesión</a></li>
-        <li><a href="{% url 'register' %}">Registrarse</a></li>
-      </ul>
-    </nav>
-    <div class="container"></div>
-    {% block body %} {% endblock %}
+    <div class="navbar">
+      <div class="box-logo">
+        <a href="#" class="logo">EL COMILON</a>
+      </div>
+      <div class="box-menu">
+        <a href="#" class="menu-item menu-btn">Menú</a>
+        <a href="#" class="menu-item regis">Registrarse</a>
+        <a href="#" class="menu-item login">Ingresar</a>
+      </div>
+    </div>
+    <div class="container">{% block body %} {% endblock %}</div>
+    <div class="footer">
+      <div class="tm">El Comilon&trade;</div>
+    </div>
   </body>
 </html>
