@@ -1,0 +1,48 @@
+{% extends "./base.html" %} 
+
+{% load static %}
+{% block title %} Menu {% endblock %}
+{% block body%}
+<h1 style="text-align: center; color: red">MENU</h1>
+<div style="width: 100vw; height: 5vh;"></div>
+<div style="background-size: contain; margin: 0; padding: 0; box-sizing: border-box; height: 30vh; width: 33%; float: left; text-align: center;">
+    <div style="height: 80%;">
+        <img style="outline: 2px solid #ba1200; outline-offset: 2px;" height="150px" src="{% static 'img/img1.jpg' %}" alt="">
+    </div>
+    <a href="{% url 'agregar' %}" style="height: 20%; text-align: center; color: #ba1200; font-weight: bold;">Agregar al Carrito</a>
+</div>
+<div style="background-size: contain; margin: 0; padding: 0; box-sizing: border-box; height: 30vh; width: 33%; float: left; text-align: center;">
+    <div style="height: 80%;">
+        <img style="outline: 2px solid #ba1200; outline-offset: 2px;" height="150px" src="{% static 'img/img2.jpg' %}" alt="">
+    </div>
+    <a href="{% url 'agregar' %}" style="height: 20%; text-align: center; color: #ba1200; font-weight: bold;">Agregar al Carrito</a>
+</div>
+<div style="background-size: contain; margin: 0; padding: 0; box-sizing: border-box; height: 30vh; width: 33%; float: left; text-align: center;">
+    <div style="height: 80%;">
+        <img style="outline: 2px solid #ba1200; outline-offset: 2px;" height="150px" src="{% static 'img/img3.jpg' %}" alt="">
+    </div>
+    <a href="{% url 'agregar' %}" style="height: 20%; text-align: center; color: #ba1200; font-weight: bold;">Agregar al Carrito</a>
+</div>
+<div style="background-size: contain; margin: 0; padding: 0; box-sizing: border-box; height: 30vh; width: 33%; float: left; text-align: center;">
+    <div style="height: 80%;">
+        <img style="outline: 2px solid #ba1200; outline-offset: 2px;" height="150px" src="{% static 'img/img4.jpg' %}" alt="">
+    </div>
+    <a href="{% url 'agregar' %}" style="height: 20%; text-align: center; color: #ba1200; font-weight: bold;">Agregar al Carrito</a>
+</div>
+<div style="background-size: contain; margin: 0; padding: 0; box-sizing: border-box; height: 30vh; width: 33%; float: left; text-align: center;">
+    <div style="height: 80%;">
+        <img style="outline: 2px solid #ba1200; outline-offset: 2px;" height="150px" src="{% static 'img/img5.jpg' %}" alt="">
+    </div>
+    <a href="{% url 'agregar' %}" style="height: 20%; text-align: center; color: #ba1200; font-weight: bold;">Agregar al Carrito</a>
+</div>
+<div style="background-size: contain; margin: 0; padding: 0; box-sizing: border-box; height: 30vh; width: 33%; float: left; text-align: center;">
+    <div style="height: 80%;">
+        <img style="outline: 2px solid #ba1200; outline-offset: 2px;" height="150px" src="{% static 'img/img6.jpg' %}" alt="">
+    </div>
+    <a href="{% url 'agregar' %}" style="height: 20%; text-align: center; color: #ba1200; font-weight: bold;">Agregar al Carrito</a>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "./base.html" %} 
+
+{% load static %}
+
+{% block title %} Agregar {% endblock %} 
+
+{% block body%}
+
+
+<form>
+  <div class="form-group row">
+    <label for="pan" class="col-4 col-form-label">Sandwitch</label> 
+    <div class="col-8">
+      <select id="pan" name="pan" class="custom-select">
+        <option value="0">Seleccione una opción</option>
+        <option value="1">Barros luco</option>
+        <option value="2">Chacarero</option>
+        <option value="3">Mechada queso</option>
+        <option value="4">Lomo queso</option>
+        <option value="5">Mechada italiana</option>
+        <option value="6">Lomo italiano</option>
+        <option value="7">Pechuga de pollo</option>
+        <option value="8">Italiano</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="papas" class="col-4 col-form-label">Papas</label> 
+    <div class="col-8">
+      <select id="papas" name="papas" class="custom-select">
+        <option value="0">Seleccione una opción</option>
+        <option value="9">Papas Francesas</option>
+        <option value="10">Papas Rusticas</option>
+        <option value="11">Papas Medianas</option>
+        <option value="12">Papas grandes</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="bebida" class="col-4 col-form-label">Bebida</label> 
+    <div class="col-8">
+      <select id="bebida" name="bebida" class="custom-select">
+        <option value="0">Seleccione una opción</option>
+        <option value="13">Sprite</option>
+        <option value="14">Fanta</option>
+        <option value="15">Inca Cola</option>
+        <option value="16">Pepsi</option>
+        <option value="17">Bils</option>
+        <option value="18">Pap</option>
+        <option value="19">Coca-Cola</option>
+      </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+
+{% endblock %}

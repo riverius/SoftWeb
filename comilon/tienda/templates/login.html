@@ -1,19 +1,23 @@
-{% extends "./base.html" %} {% block title %} index {% endblock %} {% block
-body%} {% load static %} {% block body %}
-<form method="POST">
-  {% csrf_token %}
-  <div class="login">
-    <input type="text" name="username" placeholder="Ingrese su usuario" />
-  </div>
-  <div class="login">
-    <input
-      type="password"
-      name="password"
-      placeholder="Ingrese su contraseña"
-    />
-  </div>
-  <div>
-    <button type="submit">Iniciar Sesión</button>
-  </div>
-</form>
+{% extends "./base.html" %}
+
+{% load static %} 
+
+{% block title %} 
+Login 
+{% endblock %} 
+
+{% block body %}
+
+<div class="log-cont">
+  <h2>Iniciar sesión</h2>
+  <form method="POST">
+    {% csrf_token %} {{ login_form.as_p }}
+    <button type="submit">Iniciar sesión</button>
+  </form>
+  <p class="text-center">
+    ¿No tienes una cuenta? <a id="reg" href="/register">Crear cuenta</a>.
+  </p>
+</div>
+
+
 {% endblock %}

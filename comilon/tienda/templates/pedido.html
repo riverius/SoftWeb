@@ -1,0 +1,51 @@
+{% extends "./base.html" %} {% block title %} Menu {% endblock %} {% block
+body%} {% load static %} {% block body %}
+<div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>NOMBRE</th>
+                            <th>CANTIDAD</th>
+                            <th>PRECIO UNITARIO</th>
+                            <th colspan="5">Opciones</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>COMPLETO</td>
+                            <td>2</td>
+                            <td>$1.500</td>
+                            <td><a href="#" >Editar </a></td>
+                            <td><a href="#">Eliminar</a></td> 
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>PAPAS FRITAS</td>
+                            <td>1</td>
+                            <td>$2.000</td>
+                            <td><a href="#" >Editar </a></td>
+                            <td><a href="#">Eliminar</a></td> 
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>PIZZA NAPOLITANA</td>
+                            <td>2</td>
+                            <td>$9.000</td>
+                            <td><a href="#" >Editar </a></td>
+                            <td><a href="#">Eliminar</a></td> 
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>BEBIDA LATA</td>
+                            <td>4</td>
+                            <td>$800</td>
+                            <td><a href="#" >Editar </a></td>
+                            <td><a href="#">Eliminar</a></td> 
+                        </tr>
+                    </tbody>
+                </table>
+</div>
+{% endblock %}
